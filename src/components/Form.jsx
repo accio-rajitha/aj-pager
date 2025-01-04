@@ -28,7 +28,7 @@ const Form = () => {
       alert('Message must be atleast 10 characters long !!!')
       return;
     }
-    const response = axios.post('https://pager-25634-default-rtdb.asia-southeast1.firebasedatabase.app/message.json',
+    const response = axios.post('https://aj-pager-23c4e-default-rtdb.asia-southeast1.firebasedatabase.app/message.json',
       {
         name: name,
         message: message
@@ -68,7 +68,7 @@ const Form = () => {
             <input type="text" placeholder="send your message !!" onChange={handleMessageChange} value={message}/>
         </div>
         <div className="form-btn">
-            <button onClick={handleSubmit}>Send</button>
+            <button onClick={handleSubmit}>Submit</button>
         </div>
       </form>
     </div>
